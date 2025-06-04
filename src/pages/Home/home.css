@@ -28,12 +28,12 @@ body { /* Apply to body for global font settings if not set elsewhere */
 
 /* Carousel Styles (from previous suggestions, slightly refined) */
 .carousel {
-    height: 55vh; /* Adjusted height */
+    height: 50vh; /* Adjusted height */
     margin-bottom: 50px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Softer shadow */
-    width: 30vw;
+    width: 25vw;
 }
 
 .carousel-inner {

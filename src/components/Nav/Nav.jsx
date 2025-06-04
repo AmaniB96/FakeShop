@@ -1,16 +1,14 @@
-import { NavLink } from 'react-router-dom'
-import './nav.css'
+import { NavLink } from 'react-router-dom';
+import './nav.css';
 
 export default function Nav() {
-    
-
-
-    return(
-        <div className="nav">
+    return (
+        <nav className="nav">
+            <span className="nav-title">My Store</span> {/* Add a title/logo */}
             <ul>
-                <NavLink to="home">Home</NavLink>
-                <NavLink to="produit">Produits</NavLink>
+                <li><NavLink to="home">Home</NavLink></li>
+                <li><NavLink to="produit">Products</NavLink></li>
             </ul>
-        </div>
-    )
+        </nav>
+    );
 }

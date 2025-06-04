@@ -23,7 +23,7 @@ export default function Produit() {
                     <h2>Highly Rated Products</h2>
                     <div className="product-grid">
                     {product && product.map((item) => (
-                        <div key={item.id} className="product-card"> 
+                        <NavLink to={`${item.id}`}><div key={item.id} className="product-card">
                             <div className="product-image-container">
                                 <img src={item.image} alt="" />
                             </div>
@@ -31,10 +31,11 @@ export default function Produit() {
                             <div className="product-info">
                                 <h3 className="product-title">{item.title}</h3>
                                 <p className="product-price">{item.price} $</p>
-                                <NavLink to={`${item.id}`}>Voir Details</NavLink>
+                                
                             </div>
-
+                            
                         </div>
+                        </NavLink> 
                     )) }
                     </div>
                 </div>
