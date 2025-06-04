@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import './nav.css'
 
 export default function Nav() {
@@ -7,8 +8,8 @@ export default function Nav() {
     return(
         <div className="nav">
             <ul>
-                <li>Home</li>
-                <li>Produits</li>
+                <NavLink to="home">Home</NavLink>
+                <NavLink to="produit">Produits</NavLink>
             </ul>
         </div>
     )
