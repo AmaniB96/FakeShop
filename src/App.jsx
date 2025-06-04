@@ -3,6 +3,7 @@ import './App.css'
 import Layout from './layout/Layout'
 import Home from './pages/Home/Home'
 import Produit from './pages/Produits/Produit'
+import Details from './pages/Details/Details'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
           <Route index element={<Home/>}/>
           <Route path="home" element={<Home/>}/>
           <Route path="produit" element={<Produit/>}/>
+          <Route path="produit/:id" element={<Details/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

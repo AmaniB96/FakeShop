@@ -1,7 +1,7 @@
 import axios from 'axios';
 import './produit.css'
 import {useState, useEffect } from 'react';
-
+import { NavLink } from 'react-router-dom';
 
 export default function Produit() {
     
@@ -31,6 +31,7 @@ export default function Produit() {
                             <div className="product-info">
                                 <h3 className="product-title">{item.title}</h3>
                                 <p className="product-price">{item.price} $</p>
+                                <NavLink to={`${item.id}`}>Voir Details</NavLink>
                             </div>
 
                         </div>
