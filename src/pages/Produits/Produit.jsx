@@ -16,7 +16,7 @@ export default function Produit() {
 
     return(
             <>
-            <div>
+            <div className='produit-container'>
                 <h1>PRODUIT</h1>
 
                 <div className='quatreEtoiles'>
